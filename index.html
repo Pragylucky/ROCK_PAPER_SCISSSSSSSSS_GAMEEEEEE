@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="head">
+        <h1 class="headings">Rock Paper Scissors</h1>
+    </div>
     
+    <button type="button" id="controller">
+        Start
+    </button>
+    
+    <div class="content">
+        
+        <div id="rightbox">
+            <img src="./resources/rock_right.png" alt="Rock" id="rightimage">
+            <button id="rRock" class="rChoices">
+                Rock
+            </button>
+            <button id="rPaper" class="rChoices">
+                Paper
+            </button>
+            <button id="rScissor" class="rChoices">
+                Scissor
+            </button>
+            <p>Your Choice: <span id="yourChoice">Rock</span></p>
+        </div>
+
+        <div>
+            <img src="./resources/versus.png" alt="Versus" class="versus">
+        </div>
+
+        <div id="leftbox">
+            <img src="./resources/rock_left.png" alt="Rock" id="leftimage">
+            <button id="lRock" class="lChoices">Rock</button>
+            <button id="lPaper" class="lChoices">Paper</button>
+            <button id="lScissor" class="lChoices">Scissor</button>
+            <p>Computer's choice: <span id="computerChoice">Rock</span></p>
+        </div>
+
+    </div>
+    
+    <h1 id="result">Its a Draw</h1>
+    
+    <div class="foot">
+        <p>Contributed By : <a href="https://github.com/NischalKothari">Nischal Kothari</a> </p>
+    </div>
 </body>
+<script src="index.js"></script>
 </html>
