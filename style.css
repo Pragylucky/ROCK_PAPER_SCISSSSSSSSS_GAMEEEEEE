@@ -1,0 +1,146 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f0f0f0;
+}
+
+.head {
+    background: royalblue;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    padding: 20px 0;
+}
+
+.headings {
+    font-size: 2rem;
+}
+
+#controller {
+    height: 50px;
+    width: 120px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 5%;
+    margin: 15px auto;
+    display: block;
+    background-color: rgb(115, 217, 152);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#controller:hover {
+    background-color: rgb(113, 173, 135);
+}
+
+.content {
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    gap: 40px;                 
+    padding: 20px;
+}
+
+#leftbox,
+#rightbox {
+    width: 200px;              
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    gap: 20px;
+}
+
+#leftbox img,
+#rightbox img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.versus {
+    width: 80px;               
+    height: auto;
+}
+
+
+.foot {
+    background: royalblue;
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+a {
+    color: bisque;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.rChoices, .lChoices {
+    background-color: rgb(115, 217, 152);
+    width: 55px;
+    cursor: pointer;
+    padding: 2px 5px;
+    border: none;
+    border-radius: 3px;
+    color: black;
+}
+
+.rChoices:hover {
+    background-color: rgb(113, 173, 135);
+}
+
+.lChoices {
+    cursor: not-allowed;
+    background-color: rgb(222, 98, 98);
+    color: black;
+}
+
+.rChoices:disabled, .lChoices:disabled {
+    color: black;
+    opacity: 1;
+}
+
+#result {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+    height: 40px;
+}
+
+
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;   
+    gap: 20px;                
+  }
+
+  .versus {
+    width: 60px;              
+    margin: 10px 0;
+  }
+
+  #leftbox,
+  #rightbox {
+    width: 100%;              
+  }
+}
